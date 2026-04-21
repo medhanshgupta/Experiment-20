@@ -1,4 +1,4 @@
-# Medhansh Gupta - 25070123074
+<img width="1808" height="543" alt="image" src="https://github.com/user-attachments/assets/60e65b3b-68aa-494b-aaaf-e5dbe1533d63" /># Medhansh Gupta - 25070123074
 
 # Aim: Covid Data Analysis
 
@@ -6,6 +6,8 @@
 This experiment focuses on End-to-End Data Analysis and Predictive Modeling, specifically applied to a COVID-19 dataset.   
 The theory centers on the data science lifecycle, which begins with data ingestion and cleaning, followed by exploratory analysis to find trends (such as growth rates in confirmed cases), and concludes with machine learning to predict future outcomes. 
 By integrating libraries for data manipulation, visualization, and predictive modeling, this program demonstrates how to transform raw pandemic data into actionable insights, such as identifying hotspots or forecasting mortality trends.  
+<img width="1808" height="543" alt="image" src="https://github.com/user-attachments/assets/cd2e8514-e80f-4150-b0f6-d2eba6782380" />
+
 
 pd.read_csv(): Loads the COVID-19 dataset from a CSV file into a pandas DataFrame for processing.   
 
