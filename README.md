@@ -28,6 +28,18 @@ India Choropleth Map — Custom GeoJSON with px.choropleth():
 
 Unlike the world map which uses Plotly's built-in country boundaries, mapping Indian states requires custom geographic boundary data. A GeoJSON file containing state outlines is downloaded from a public GitHub URL using urllib.request.urlopen() and parsed into a Python dictionary using json.load(). A copy of top_state is made using copy() and an Active column is computed on it before passing it to the map function.
 
+px.choropleth() is called with the following key parameters:
+
+geojson=india_geojson: Passes the custom GeoJSON geometry so Plotly knows the boundaries of each Indian state.   
+featureidkey="properties.NAME_1": The path within the GeoJSON feature properties that holds the state name. Plotly matches values at this path against the locations column to link each row of data to its corresponding boundary on the map.   
+locations="Province/State": The DataFrame column containing state names to match against the GeoJSON.  
+color="Confirmed": The column whose values determine the fill colour intensity.   
+hover_name="Province/State": The column whose value appears as the primary label in the interactive tooltip when hovering over a state.  
+hover_data={"Confirmed": True, "Recovered": True, "Active": True}: Specifies additional columns to display in the hover tooltip alongside the primary label.   
+color_continuous_scale="Reds": The colour palette applied to the fill.   
+title: Sets the figure title to "COVID-19 Confirmed Cases by Indian State".   
+labels={"Confirmed": "Confirmed Cases"}: Renames the colour bar label for clarity.   
+
 
 ### Key pandas Commands Used:
 
